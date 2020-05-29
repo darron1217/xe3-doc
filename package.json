@@ -1,0 +1,29 @@
+{
+  "name": "xe3-doc",
+  "version": "1.0.0",
+  "description": "XE3 Guide Documentation",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vuepress dev docs --temp .temp",
+    "build": "vuepress build docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darron1217/xe3-doc.git"
+  },
+  "keywords": [
+    "xe3"
+  ],
+  "author": "Darron Park",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/darron1217/xe3-doc/issues"
+  },
+  "homepage": "https://github.com/darron1217/xe3-doc#readme",
+  "dependencies": {
+    "markdown-it-disable-url-encode": "^1.0.1",
+    "vuepress": "^1.5.0",
+    "vuepress-bar": "^0.3.1",
+    "vuepress-plugin-fulltext-search": "^2.0.3"
+  }
+}

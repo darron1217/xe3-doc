@@ -4,7 +4,7 @@ node_modules
 # phpstorm IDE
 .idea/
 # Vuepress
-.vuepress/
-.temp/
+/.vuepress
+/.temp
 # deploy
 public/
