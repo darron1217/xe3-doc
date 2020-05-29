@@ -7,4 +7,4 @@ node_modules
 /.vuepress
 /.temp
 # deploy
-public/
+/dist
