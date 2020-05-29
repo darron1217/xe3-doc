@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>토글 메뉴 제작 방법 | XE3 가이드 문서</title>
+    <meta name="generator" content="VuePress 1.5.0">
+    
+    <meta name="description" content="XE3 가이드 문서">
+    <link rel="preload" href="/xe3-doc/assets/css/0.styles.e9ee09ad.css" as="style"><link rel="preload" href="/xe3-doc/assets/js/app.76304fcc.js" as="script"><link rel="preload" href="/xe3-doc/assets/js/2.587667cf.js" as="script"><link rel="preload" href="/xe3-doc/assets/js/55.1b418742.js" as="script"><link rel="prefetch" href="/xe3-doc/assets/js/10.57948f23.js"><link rel="prefetch" href="/xe3-doc/assets/js/11.fecad70b.js"><link rel="prefetch" href="/xe3-doc/assets/js/12.27a5bb09.js"><link rel="prefetch" href="/xe3-doc/assets/js/13.b172c327.js"><link rel="prefetch" href="/xe3-doc/assets/js/14.da8aaa48.js"><link rel="prefetch" href="/xe3-doc/assets/js/15.0b36b24e.js"><link rel="prefetch" href="/xe3-doc/assets/js/16.fca16dee.js"><link rel="prefetch" href="/xe3-doc/assets/js/17.6305561a.js"><link rel="prefetch" href="/xe3-doc/assets/js/18.a434d577.js"><link rel="prefetch" href="/xe3-doc/assets/js/19.876d6157.js"><link rel="prefetch" href="/xe3-doc/assets/js/20.f53151d0.js"><link rel="prefetch" href="/xe3-doc/assets/js/21.70365815.js"><link rel="prefetch" href="/xe3-doc/assets/js/22.31cf7805.js"><link rel="prefetch" href="/xe3-doc/assets/js/23.40cc3185.js"><link rel="prefetch" href="/xe3-doc/assets/js/24.a06ce1e1.js"><link rel="prefetch" href="/xe3-doc/assets/js/25.09c52c95.js"><link rel="prefetch" href="/xe3-doc/assets/js/26.e75a13d8.js"><link rel="prefetch" href="/xe3-doc/assets/js/27.fa6613e2.js"><link rel="prefetch" href="/xe3-doc/assets/js/28.85af2809.js"><link rel="prefetch" href="/xe3-doc/assets/js/29.afff3386.js"><link rel="prefetch" href="/xe3-doc/assets/js/3.ac98112a.js"><link rel="prefetch" href="/xe3-doc/assets/js/30.f71492bf.js"><link rel="prefetch" href="/xe3-doc/assets/js/31.6240829d.js"><link rel="prefetch" href="/xe3-doc/assets/js/32.3f9c71ea.js"><link rel="prefetch" href="/xe3-doc/assets/js/33.a1d5553c.js"><link rel="prefetch" href="/xe3-doc/assets/js/34.0cba113d.js"><link rel="prefetch" href="/xe3-doc/assets/js/35.0e8fd88d.js"><link rel="prefetch" href="/xe3-doc/assets/js/36.8739696f.js"><link rel="prefetch" href="/xe3-doc/assets/js/37.3e6d3291.js"><link rel="prefetch" href="/xe3-doc/assets/js/38.21071671.js"><link rel="prefetch" href="/xe3-doc/assets/js/39.32947bd9.js"><link rel="prefetch" href="/xe3-doc/assets/js/4.728af792.js"><link rel="prefetch" href="/xe3-doc/assets/js/40.9997bca4.js"><link rel="prefetch" href="/xe3-doc/assets/js/41.8351078e.js"><link rel="prefetch" href="/xe3-doc/assets/js/42.66b591d4.js"><link rel="prefetch" href="/xe3-doc/assets/js/43.4f4d6bc2.js"><link rel="prefetch" href="/xe3-doc/assets/js/44.f690c560.js"><link rel="prefetch" href="/xe3-doc/assets/js/45.d1992aa2.js"><link rel="prefetch" href="/xe3-doc/assets/js/46.3f0a5770.js"><link rel="prefetch" href="/xe3-doc/assets/js/47.129b2e11.js"><link rel="prefetch" href="/xe3-doc/assets/js/48.71b19ee6.js"><link rel="prefetch" href="/xe3-doc/assets/js/49.6547541b.js"><link rel="prefetch" href="/xe3-doc/assets/js/5.5585d8d7.js"><link rel="prefetch" href="/xe3-doc/assets/js/50.32e695cb.js"><link rel="prefetch" href="/xe3-doc/assets/js/51.b1fd9d73.js"><link rel="prefetch" href="/xe3-doc/assets/js/52.bf53132e.js"><link rel="prefetch" href="/xe3-doc/assets/js/53.44be3848.js"><link rel="prefetch" href="/xe3-doc/assets/js/54.bafd8858.js"><link rel="prefetch" href="/xe3-doc/assets/js/56.2c5bf17c.js"><link rel="prefetch" href="/xe3-doc/assets/js/57.944f11f0.js"><link rel="prefetch" href="/xe3-doc/assets/js/58.f0464f72.js"><link rel="prefetch" href="/xe3-doc/assets/js/59.9c31cf3e.js"><link rel="prefetch" href="/xe3-doc/assets/js/6.6714d407.js"><link rel="prefetch" href="/xe3-doc/assets/js/60.bfce6280.js"><link rel="prefetch" href="/xe3-doc/assets/js/61.4d2fe3d4.js"><link rel="prefetch" href="/xe3-doc/assets/js/62.c91dbea7.js"><link rel="prefetch" href="/xe3-doc/assets/js/63.60391993.js"><link rel="prefetch" href="/xe3-doc/assets/js/64.530ec0c5.js"><link rel="prefetch" href="/xe3-doc/assets/js/65.dd2cc186.js"><link rel="prefetch" href="/xe3-doc/assets/js/66.374a6caa.js"><link rel="prefetch" href="/xe3-doc/assets/js/67.a6a27ac6.js"><link rel="prefetch" href="/xe3-doc/assets/js/68.69e9dfc2.js"><link rel="prefetch" href="/xe3-doc/assets/js/69.4aed424e.js"><link rel="prefetch" href="/xe3-doc/assets/js/7.f7226d2c.js"><link rel="prefetch" href="/xe3-doc/assets/js/70.2295f984.js"><link rel="prefetch" href="/xe3-doc/assets/js/71.03cb5805.js"><link rel="prefetch" href="/xe3-doc/assets/js/72.194fd677.js"><link rel="prefetch" href="/xe3-doc/assets/js/73.8f5c98e5.js"><link rel="prefetch" href="/xe3-doc/assets/js/74.6b6732d8.js"><link rel="prefetch" href="/xe3-doc/assets/js/75.1e8c041c.js"><link rel="prefetch" href="/xe3-doc/assets/js/76.cc2ec3c1.js"><link rel="prefetch" href="/xe3-doc/assets/js/77.f2997c1a.js"><link rel="prefetch" href="/xe3-doc/assets/js/78.1789b79e.js"><link rel="prefetch" href="/xe3-doc/assets/js/79.f43d2ef6.js"><link rel="prefetch" href="/xe3-doc/assets/js/8.817a7cc8.js"><link rel="prefetch" href="/xe3-doc/assets/js/80.51578898.js"><link rel="prefetch" href="/xe3-doc/assets/js/81.e8ef26a1.js"><link rel="prefetch" href="/xe3-doc/assets/js/82.522bbb94.js"><link rel="prefetch" href="/xe3-doc/assets/js/83.c1bfa961.js"><link rel="prefetch" href="/xe3-doc/assets/js/84.94c055fc.js"><link rel="prefetch" href="/xe3-doc/assets/js/85.f5144183.js"><link rel="prefetch" href="/xe3-doc/assets/js/86.7db8b9b0.js"><link rel="prefetch" href="/xe3-doc/assets/js/87.d7ed73b8.js"><link rel="prefetch" href="/xe3-doc/assets/js/88.9b0d7040.js"><link rel="prefetch" href="/xe3-doc/assets/js/89.6c40ec6f.js"><link rel="prefetch" href="/xe3-doc/assets/js/9.7a2c1fcd.js"><link rel="prefetch" href="/xe3-doc/assets/js/90.f7f4b6ef.js"><link rel="prefetch" href="/xe3-doc/assets/js/91.71e51af9.js"><link rel="prefetch" href="/xe3-doc/assets/js/92.516c562c.js"><link rel="prefetch" href="/xe3-doc/assets/js/93.1536d71b.js"><link rel="prefetch" href="/xe3-doc/assets/js/94.8adeb6a2.js"><link rel="prefetch" href="/xe3-doc/assets/js/95.0b36db94.js"><link rel="prefetch" href="/xe3-doc/assets/js/96.88acae77.js"><link rel="prefetch" href="/xe3-doc/assets/js/97.71b06025.js"><link rel="prefetch" href="/xe3-doc/assets/js/98.c474de82.js">
+    <link rel="stylesheet" href="/xe3-doc/assets/css/0.styles.e9ee09ad.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/xe3-doc/" class="home-link router-link-active"><!----> <span class="site-name">XE3 가이드 문서</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  <ul class="sidebar-links"><li><a href="/xe3-doc/" aria-current="page" class="sidebar-link">Home</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span> 시작하기</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span> 사이트 설정</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span> 번들 플러그인</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span> 개발자 문서</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span> 플러그인 개발</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/xe3-doc/05. 플러그인 개발/admin-menu-extend.html" class="sidebar-link">관리자 사이트 메뉴 추가 방법</a></li><li><a href="/xe3-doc/05. 플러그인 개발/common-module-make.html" class="sidebar-link">모듈 생성</a></li><li><a href="/xe3-doc/05. 플러그인 개발/common-plugin-make.html" class="sidebar-link">플러그인 생성</a></li><li><a href="/xe3-doc/05. 플러그인 개발/common-structure.html" class="sidebar-link">플러그인 경로 및 기본 구조</a></li><li><a href="/xe3-doc/05. 플러그인 개발/common-widget-make.html" class="sidebar-link">위젯 제작</a></li><li><a href="/xe3-doc/05. 플러그인 개발/creator-info-edit.html" class="sidebar-link">플러그인 정보 추가 및 수정</a></li><li><a href="/xe3-doc/05. 플러그인 개발/dynamic-field-guide.html" class="sidebar-link">다이나믹 필드 제작 방법</a></li><li><a href="/xe3-doc/05. 플러그인 개발/dynamic-field-skin.html" class="sidebar-link">다이나믹 필드 스킨 제작 방법</a></li><li><a href="/xe3-doc/05. 플러그인 개발/editor-guide.html" class="sidebar-link">에디터 제작 방법</a></li><li><a href="/xe3-doc/05. 플러그인 개발/editor-tool-guide.html" class="sidebar-link">에디터툴 제작 방법</a></li><li><a href="/xe3-doc/05. 플러그인 개발/introduce.html" class="sidebar-link">플러그인 개발</a></li><li><a href="/xe3-doc/05. 플러그인 개발/package-information.html" class="sidebar-link">패키징 방법</a></li><li><a href="/xe3-doc/05. 플러그인 개발/toggle-menu-guide.html" class="active sidebar-link">토글 메뉴 제작 방법</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/xe3-doc/05. 플러그인 개발/toggle-menu-guide.html#토글메뉴" class="sidebar-link">토글메뉴</a></li></ul></li><li><a href="/xe3-doc/05. 플러그인 개발/ui-object-guide.html" class="sidebar-link">UI 오브젝트 제작 방법</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span> 테마 개발&amp;제작</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span> 스킨 개발&amp;제작</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span> 서비스</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span> 프론트엔드 (js)</span> <span class="arrow right"></span></p> <!----></section></li><li><a href="/xe3-doc/LICENSE.html" class="sidebar-link">/LICENSE.html</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="토글-메뉴-제작-방법"><a href="#토글-메뉴-제작-방법" class="header-anchor">#</a> 토글 메뉴 제작 방법</h1> <h2 id="토글메뉴"><a href="#토글메뉴" class="header-anchor">#</a> 토글메뉴</h2> <p>부가적으로 필요한 기능들을 드롭박스로 호출할 수 있도록 토글메뉴를 사용할 수 있습니다. 예를 들어 게시글 페이지에서 게시글 작성자를 클릭하면 프로필을 보는 메뉴나, 회원의 관리페이지로 넘어갈 수 있는 토글메뉴가 우측에 나타나고, 공유아이콘을 클릭하면 페이스북에 공유하기, 라인에 공유하기, 트위터에 공유하기와 같은 토글메뉴 드롭박스에 나타나게 할 수 있습니다.</p> <p>토글메뉴는 형태에 따라 3가지 타입을 지원합니다.</p> <ul><li>MENUTYPE_EXEC</li> <li>MENUTYPE_LINK</li> <li>MENUTYPE_RAW</li></ul> <h3 id="토글메뉴-생성하기"><a href="#토글메뉴-생성하기" class="header-anchor">#</a> 토글메뉴 생성하기</h3> <p>추가하고자 하는 새로운 토글메뉴 클래스에서 <code>AbstractToggleMenu</code> 를 상속 받습니다. 그리고 명시된 추상메서드를 구현합니다.</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token php language-php"><span class="token delimiter important">&lt;?php</span>
+<span class="token comment">// plugins/myplugin/src/ToggleMenus/ToggleItem.php</span>
+<span class="token keyword">namespace</span> <span class="token package">MyPlugin<span class="token punctuation">\</span>ToggleMenus</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">ToggleItem</span> <span class="token keyword">extends</span> <span class="token class-name">AbstractToggleMenu</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function">getText</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token single-quoted-string string">'string'</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function">getType</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+      <span class="token comment">// implement code</span>
+
+      <span class="token keyword">return</span> <span class="token keyword">static</span><span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token constant">MENUTYPE_RAW</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function">getAction</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token single-quoted-string string">'do_something()'</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function">getScript</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token single-quoted-string string">'js_file_directory'</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</span></code></pre></div><ul><li><code>getText</code>: 메뉴가 펼쳐졌을때 보여지게될 문자열입니다.</li> <li><code>getType</code>: <code>MENUTYPE_EXEC</code>, <code>MENUTYPE_LINK</code>, <code>MENUTYPE_RAW</code> 세 가지 중 한가지를 반환해야 합니다.</li> <li><code>getAction</code>: 해당 메뉴를 클릭했을때 실행 되어질 js 문자열입니다. 만약 타입이 <code>raw</code> 인 경우 html 이 반환되어야 합니다.</li> <li><code>getScript</code>: 메뉴의 동작을 위해 특정 js 파일이 필요한 경우 해당 파일의 경로를 반환해 줍니다.</li></ul> <h4 id="exec"><a href="#exec" class="header-anchor">#</a> exec</h4> <p><code>exec</code> 타입은 <code>getAction</code> 에 의해 반환된 문자열이 그 자체로 js 로 실행 가능한 형태를 가집니다. 특정 함수를 실행하는 경우 함수에서 필요로하는 인자는 해당 토글메뉴내에서 제공되어야 합니다.</p> <div class="language- extra-class"><pre class="language-text"><code>public function getType()
+{
+  return static::MENUTYPE_EXEC;
+}
+
+public function getAction()
+{
+  return 'alert(&quot;hello&quot;)';
+}
+</code></pre></div><h4 id="link"><a href="#link" class="header-anchor">#</a> link</h4> <p><code>link</code> 타입은 클릭시 다른페이지로 이동하는 메뉴입니다.</p> <div class="language- extra-class"><pre class="language-text"><code>public function getType()
+{
+  return static::MENUTYPE_LINK;
+}
+
+public function getAction()
+{
+  return '/';
+}
+</code></pre></div><h4 id="raw"><a href="#raw" class="header-anchor">#</a> raw</h4> <p><code>raw</code> 타입은 메뉴에 표현될 형태부터 실행될 방식까지 직접 지정하여 사용하는 방식입니다.</p> <div class="language- extra-class"><pre class="language-text"><code>public function getType()
+{
+  return static::MENUTYPE_RAW;
+}
+
+public function getAction()
+{
+  return '&lt;a href=&quot;#&quot; onclick=&quot;method('argument')&quot;&gt;Raw메뉴&lt;/a&gt;';
+}
+</code></pre></div><h3 id="토글메뉴-등록"><a href="#토글메뉴-등록" class="header-anchor">#</a> 토글메뉴 등록</h3> <h4 id="컴포넌트-아이디"><a href="#컴포넌트-아이디" class="header-anchor">#</a> 컴포넌트 아이디</h4> <p>컴포넌트 아이디는 아래와 같은 규칙으로 작성합니다.</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;type&gt;/toggleMenu/&lt;plugin&gt;@&lt;name&gt;
+</code></pre></div><p><code>type</code>은 토글메뉴를 사용할 타입의 아이디 입니다. (ex - <code>user</code>, <code>module/board@board</code>)<br> <code>plugin</code>은 토글메뉴가 소속될 플러그인 디렉토리 이름입니다.<br> <code>name</code>은 토글메뉴의 고유한 아이디 입니다.</p> <h4 id="컴포넌트-등록"><a href="#컴포넌트-등록" class="header-anchor">#</a> 컴포넌트 등록</h4> <p>composer.json 파일에 다음과 같이 입력합니다.</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">// plugins/my_plugin/composer.json</span>
+<span class="token operator">...</span>
+  <span class="token string">&quot;extra&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token string">&quot;xpressengine&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token string">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;my plugin&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;component&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                <span class="token string">&quot;my_plugin@my_field/toggleMenu/my_plugin@toggle_item&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                    <span class="token string">&quot;class&quot;</span><span class="token operator">:</span> <span class="token string">&quot;GilDongHong\\XePlugin\\MyPlugin\\ToggleMenus\\ToggleItem&quot;</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;toggle_item ToggleItem&quot;</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;The toggleMenu supported by My_plugin plugin.&quot;</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+    <span class="token operator">...</span>
+</code></pre></div><h3 id="토글메뉴-띄우기"><a href="#토글메뉴-띄우기" class="header-anchor">#</a> 토글메뉴 띄우기</h3> <p>type을 통해 등록된 토글메뉴를 불러올 수 있습니다. 가장 직관적인 방법은 ToggleMenuHandler의 getItems 메쏘드를 사용하는 것입니다.</p> <div class="language- extra-class"><pre class="language-text"><code>app('xe.toggleMenu')-&gt;getItems('user');
+
+//[
+//     &quot;user/toggleMenu/xpressengine@profile&quot; =&gt; App\ToggleMenus\User\ProfileItem,
+//     &quot;user/toggleMenu/xpressengine@manage&quot; =&gt; App\ToggleMenus\User\ManageItem,
+//]
+</code></pre></div><p>해당 함수는 user를 <code>$type</code>으로 삼은 ToggleMenu 아이템들을 리턴합니다.<br>
+타입에 따라서 모듈과 같이 instance를 사용하는 경우 두 번째 파라미터로 <code>$instanceId</code>,<br>
+User 모델과 같이 고유한 키값을 가지는 경우 세 번째 파라미터로 <code>$identifier</code>를 받습니다.<br>
+각 파라미터는 ToggleMenu의 getAction에서 받아서 처리합니다.</p> <h4 id="frontend"><a href="#frontend" class="header-anchor">#</a> Frontend</h4> <p>XE는 Frontend에서 ToggleMenu 아이템들을 로드할 수 있는 방법을 이미 준비했습니다.<br> <code>&lt;a&gt;</code>태그 안에 몇 가지 속성을 주는 것만으로 해당 type에서 필요한 ToggleMenu를<br> <code>&lt;li&gt;...&lt;/li&gt;</code>태그에 담아 렌더링할 수 있습니다.</p> <p><code>data-toggle</code> &quot;xe-page-toggle-menu&quot;를 삽입합니다.<br> <code>data-url</code> 를 넣어 toggleMenu 리스트를 동적으로 호출할 url을 삽입합니다.<br> <code>data-data</code> 사용할 type과 해당 type이 필요로 하는 파라미터를 추가로 넣어줍니다.($identifier의 키값을 id로 받고 있는 것을 확인합니다.)<br> <code>data-side</code> 렌더링된 리스트가 해당 태그 어느 방향에 위치할지 결정합니다.</p> <p>아래의 예제는 board플러그인의 모듈을 target으로 삼은 targetMenu를 호출하는 태그입니다.</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;a href=&quot;#&quot; 
+   data-toggle=&quot;xe-page-toggle-menu&quot;
+   data-url=&quot;{{route('toggleMenuPage')}}&quot;
+   data-data='{!! json_encode(['id'=&gt;$item-&gt;id,'type'=&gt;'module/board@board','instanceId'=&gt;$item-&gt;instance_id]) !!}'
+   data-side=&quot;dropdown-menu-right&quot;&gt;
+   {{$text}}
+&lt;/a&gt;
+</code></pre></div><h3 id="토글메뉴-관리"><a href="#토글메뉴-관리" class="header-anchor">#</a> 토글메뉴 관리</h3> <p>관리자가 해당 타입에 등록되어있는 토글메뉴를 사용할지 안할지를 결정할 수 있도록 화면을 띄워줄 수 있습니다.</p> <div class="language- extra-class"><pre class="language-text"><code>{!! new ToggleMenuSection($type) !!}
+</code></pre></div><p>위 예제는 $type을 사용하는 토글메뉴들의 리스트를 on/off할 수 있는 토글버튼과 함께 렌더링합니다. 저장 버튼을 누르면 ToggleMenuHandler를 통해 config에 설정정보를 저장합니다.</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/xe3-doc/05. 플러그인 개발/package-information.html" class="prev">
+        패키징 방법
+      </a></span> <span class="next"><a href="/xe3-doc/05. 플러그인 개발/ui-object-guide.html">
+        UI 오브젝트 제작 방법
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/xe3-doc/assets/js/app.76304fcc.js" defer></script><script src="/xe3-doc/assets/js/2.587667cf.js" defer></script><script src="/xe3-doc/assets/js/55.1b418742.js" defer></script>
+  </body>
+</html>
